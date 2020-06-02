@@ -1,0 +1,8 @@
+print("Скільки тобі років?", end=" ")
+age = input()
+if age[-1] == "1" and age[-2:] != "11":
+    print(f"Тобі {age} рік.")
+elif age[-1] in ("2", "3", "4") and age[-2:] not in ("12", "13", "14"):
+    print(f"Тобі {age} роки.")
+else:
+    print(f"Тобі {age} років.")
